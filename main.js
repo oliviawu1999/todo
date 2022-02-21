@@ -3,4 +3,11 @@ function addNewList() {
     console.log('hello world console');
 }
 
-console.log("ewhelrj")
+function addListItem(){
+    console.log('hello world');
+    let list = document.getElementById("grocery-list");
+    let itemInput = document.getElementById("text_input");
+    let newItem = document.createElement("li");
+    newItem.appendChild(document.createTextNode(itemInput.value));
+    list.appendChild(newItem);
+}
